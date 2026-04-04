@@ -2,29 +2,57 @@
 
 ## Purpose
 
-This document explains how support work is handled in this lab.
+This workflow defines how each case is worked in the lab. The goal is to practice support thinking.
 
-## Workflow Summary
+## Core Loop
 
-1. issue is received
-2. issue is restated clearly
-3. issue is scoped
-4. likely causes are identified
-5. first checks are chosen
-6. findings are documented
-7. issue is either resolved or escalated
-8. ticket is closed or handed off with context
+1. perform a first-pass RCHCD attempt
+2. review and critique the reasoning
+3. convert the refined reasoning into a cleaner ticket record
+4. question the ticket to understand the checks, findings, resolution, escalation logic, and verification
+5. debrief the case and capture the lesson
+
+## RCHCD
+
+### Restate
+
+Rewrite the issue in one clear sentence.
+
+### Classify
+
+Identify the likely domain, likely fault area, current scope, and impact.
+
+### Hypotheses
+
+List the most plausible explanations without presenting them as facts.
+
+### Checks
+
+Choose the highest-yield next checks and state what each one would help rule in or rule out.
+
+### Decide
+
+Determine the most justified next direction: resolve, continue investigating, or escalate.
+
+### Debrief
+
+Summarize what the case taught, including what mattered most and what would be done better next time.
 
 ## What Good Execution Looks Like
 
-A strong support case should show:
+A strong case should show:
 
-- clear problem framing
-- sensible hypotheses
-- useful checks and findings
-- justified resolution or escalation
+- clear issue framing
+- separation of facts, assumptions, and unknowns
+- plausible hypotheses
+- useful checks tied to hypotheses
+- justified resolution or escalation logic
 - clear verification
-- a debrief that captures the lesson from the case
+- a concise lesson learned
+
+## Output Standard
+
+The ticket is the cleaned case record. The debrief captures what was learned. KBs and runbooks are created as learning artifacts when a case is useful for understanding how reusable support documentation is structured.
 
 ## What This Workflow Trains
 

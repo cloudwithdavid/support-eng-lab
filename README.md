@@ -1,26 +1,47 @@
 # IT / Cloud Support Lab
 
-This lab uses structured Jira tickets to develop and demonstrate IT and cloud support skills through triage reasoning, troubleshooting, documentation, escalation, and repeatable case handling.
+> This repository is a guided support-learning lab built around simulated tickets, KB articles, and runbooks. Its purpose is to demonstrate deliberate practice in learning how support work is framed, reasoned through, documented, resolved, and escalated.
 
-## Core Skills Practiced
+## What This Lab Demonstrates
 
-- turning vague user issues into structured support cases
-- forming and narrowing likely causes
-- choosing useful diagnostic checks
-- troubleshooting common support issues
-- documenting reasoning, findings, and outcomes clearly
-- resolving common issues when appropriate
-- escalating with useful context when needed
-- extracting reusable knowledge from worked cases
+- structured effort to learn support thinking
+- translation of vague user issues into structured cases
+- repeated practice with triage, hypotheses, checks, and escalation judgment
+- growing understanding of how tickets, KBs, and runbooks are used
+- clear documentation of reasoning, outcomes, and lessons learned
+
+## How the Lab Is Executed
+
+Each case is worked through in a guided loop:
+
+1. perform a first-pass RCHCD attempt
+2. critique the reasoning and tighten the logic
+3. complete the ticket write-up
+4. question the write-up to understand what the checks, findings, resolution, and escalation actually mean
+5. debrief the case and capture what was learned
+
+## Artifact Types
+
+### Tickets
+
+Primary learning artifacts used to practice issue framing, classification, hypotheses, checks, resolution vs escalation decisions, verification, and debriefing.
+
+### KB Articles
+
+Learning artifacts used to understand how repeatable issues are documented for reuse. They are included to show KB structure, purpose, and flow, not to imply deep authority on every topic.
+
+### Runbooks
+
+Learning artifacts used to understand how repeated support workflows are
+standardized into stepwise operational guidance and escalation logic.
 
 ## Repository Structure
 
-- `docs/process/` → workflow, lifecycle, and support-process documentation
-- `docs/tickets/` → selected example support cases
-- `docs/kb/` → knowledge base articles derived from recurring issues
-- `docs/runbooks/` → operational guides and triage decision frameworks
-- `assets/screenshots/` → supporting visuals from the Jira lab
+- `docs/process/` → workflow, lifecycle, and lab operating documents
+- `docs/tickets/` → simulated support cases and ticket examples
+- `docs/kb/` → learning KB articles for repeatable issue patterns
+- `docs/runbooks/` → learning runbooks for repeatable support flows
 
-## Goal
+## Scope Boundary
 
-The goal is to build and demonstrate support competence through repeated structured case handling.
+This lab includes AI-assisted artifacts and guided reasoning. Files in this repository are intended to show deliberate support-learning effort, documentation structure, and growing troubleshooting judgment rather than independent production support execution.

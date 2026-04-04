@@ -2,31 +2,45 @@
 
 ## Summary
 
-[Issue restatement.]
+[One-sentence restatement of the issue.]
 
 ## Issue
 
-[What is happening and why it matters.]
+[Clean description of what is happening, what system is affected, and current apparent scope.]
+
+## Known Facts
+
+-
+-
+-
+
+## Unknowns
+
+-
+-
+-
 
 ## Hypotheses
 
-[Plausible causes based on the issue.]
-
-1. 
-2. 
-3. 
+1.
+2.
+3.
 
 ## Checks
 
-[What was checked and the findings.]
-
-- 
-- 
-- 
+1. [check]
+   - purpose:
+   - finding:
+2. [check]
+   - purpose:
+   - finding:
+3. [check]
+   - purpose:
+   - finding:
 
 ## Resolution
 
-[What was done, or what the best-supported next path was.]
+[ What fixed the issue and by what action, or what the best-supported next path was.]
 
 ## Verification
 
@@ -38,7 +52,7 @@
 
 ## Prevention
 
-[KB candidate or prevention note.]
+[Optional prevention note, repeat-pattern note, or future KB candidate note.]
 
 ## Debrief
 
