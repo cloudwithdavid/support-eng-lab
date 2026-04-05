@@ -4,7 +4,7 @@
 
 ## What This Lab Demonstrates
 
-- structured effort to learn support thinking
+- structured approach to support case analysis and troubleshooting
 - translation of vague user issues into structured cases
 - repeated practice with triage, hypotheses, checks, and escalation judgment
 - growing understanding of how tickets, KBs, and runbooks are used

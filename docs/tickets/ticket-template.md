@@ -1,4 +1,4 @@
-# Example Ticket 01 — [Issue Title]
+# Ticket Template — [Issue Title]
 
 ## Summary
 
@@ -7,18 +7,6 @@
 ## Issue
 
 [Clean description of what is happening, what system is affected, and current apparent scope.]
-
-## Known Facts
-
--
--
--
-
-## Unknowns
-
--
--
--
 
 ## Hypotheses
 
@@ -29,13 +17,12 @@
 ## Checks
 
 1. [check]
-   - purpose:
    - finding:
+
 2. [check]
-   - purpose:
    - finding:
+
 3. [check]
-   - purpose:
    - finding:
 
 ## Resolution
