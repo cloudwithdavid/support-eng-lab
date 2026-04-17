@@ -2,7 +2,7 @@
 
 ## Summary
 
-User was signed out of their account and is currently unable to access the application.
+User was signed out and can't access the application.
 
 ## Issue
 
@@ -27,7 +27,7 @@ Single user is unable to access the application after being signed out of their 
 
 ## Resolution
 
-Password was reset and active sessions were revoked so the user could sign in again with the new password.
+User identity was verified. Password was reset and active sessions were revoked so the user could sign in again with the new password.
 
 ## Verification
 

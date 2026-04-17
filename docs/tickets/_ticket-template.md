@@ -2,7 +2,7 @@
 
 ## Summary
 
-[One-sentence restatement of the issue.]
+[Short, one-sentence restatement of the issue.]
 
 ## Issue
 

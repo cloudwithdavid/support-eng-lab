@@ -11,8 +11,8 @@ support workflow where applicable.
 
 ### Windows Endpoint
 
-1. Slow PC triage and remediation
-2. Wi-Fi connected but no internet
+1. Slow PC triage and remediation ✔️
+2. Wi-Fi connected but no internet ✔️
 3. Printer or drive mapping issue
 4. Application install blocked
 
@@ -20,15 +20,15 @@ support workflow where applicable.
 
 ### Microsoft 365
 
-1. M365 license assignment issue preventing access to Outlook or Teams
+1. Outlook access loss - M365 license assignment issue
 2. Teams desktop sign-in issue
 3. OneDrive not syncing
 4. Phishing report triage
 
 ### Identity & Access
 
-1. Password reset with forced sign-out / session reset
-2. Account lockout and unlock with root-cause note
+1. Password reset with forced sign-out / session reset ✔️
+2. Account unlock with root-cause note ✔️
 3. MFA reset / re-enrollment after device loss
 4. Suspicious login report and containment workflow
 
