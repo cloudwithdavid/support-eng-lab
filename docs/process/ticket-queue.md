@@ -1,18 +1,18 @@
 # Ticket Queue
 
-This file defines the planned ticket coverage for the IT / Cloud Support Lab.
+This file defines the planned ticket coverage for this lab.
 
 It exists to show the intended scope of practice across support domains,
 including which cases are designed to emphasize escalation judgment,
 repeatable documentation, KB potential, runbook relevance, and remote
 support workflow where applicable.
 
-## Phase 1 — IT Support
+##
 
 ### Windows Endpoint
 
-1. Slow PC triage and remediation ✔️
-2. Wi-Fi connected but no internet ✔️
+1. Slow PC — triage and remediation ✔️
+2. No internet access — DNS Failure ✔️
 3. Printer or drive mapping issue
 4. Application install blocked
 
@@ -20,21 +20,19 @@ support workflow where applicable.
 
 ### Microsoft 365
 
-1. Outlook access loss - M365 license assignment issue
+1. Lost access to Outlook — M365 license assignment issue
 2. Teams desktop sign-in issue
 3. OneDrive not syncing
 4. Phishing report triage
 
 ### Identity & Access
 
-1. Password reset with forced sign-out / session reset ✔️
-2. Account unlock with root-cause note ✔️
-3. MFA reset / re-enrollment after device loss
+1. Lost account access — Password reset with forced sign-out / session reset ✔️
+2. Lost account access — Account unlock with root-cause note ✔️
+3. Lost account access — MFA reset / re-enrollment after device loss
 4. Suspicious login report and containment workflow
 
 **Planned runbook:** Identity Sign-In Triage
-
-## Phase 2 — Cloud Support
 
 ### Linux
 
