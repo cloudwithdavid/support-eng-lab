@@ -1,7 +1,5 @@
 # KB — [Issue Title]
 
-> Knowledge Base created in a simulated support lab.
-
 ## Purpose
 
 [What repeatable issue pattern this KB helps explain.]

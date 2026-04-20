@@ -1,7 +1,5 @@
 # Runbook — [Runbook Title]
 
-> Runbook created in a simulated support lab.
-
 ## Purpose
 
 [What repeatable support workflow this runbook is designed to guide.]
