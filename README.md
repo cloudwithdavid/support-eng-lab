@@ -17,7 +17,7 @@
 
 This is a support engineering lab with a focus on operations and automation, built around simulated ticket case handling and support-oriented Bash/Python tooling.
 
-Its purpose is to develop support judgment, troubleshooting workflow, documentation clarity, escalation discipline, and small operational utilities that make common support work more technical and repeatable.
+Its purpose is to develop support judgment, troubleshooting workflow, documentation clarity, and small operational utilities that make common support work more technical and repeatable.
 
 The lab combines two connected layers of practice:
 
@@ -30,9 +30,7 @@ Selected Linux and networking cases are intentionally paired with Bash or Python
 
 ### Support Case Handling
 
-- structured support case analysis and troubleshooting
-- translation of vague user issues into structured cases
-- repeated practice with triage, hypotheses, checks, and escalation judgment
+- structured support case analysis and troubleshooting practice through triage, hypotheses, checks, and escalation judgment
 - clear documentation of reasoning, outcomes, and lessons learned
 - development of reusable support artifacts such as tickets, KB articles, and runbooks
 
@@ -60,17 +58,17 @@ This workflow is intended to build troubleshooting skill through structured supp
 
 Primary case-handling records used to practice issue framing, classification, hypotheses, checks, resolution versus escalation decisions, verification, and debriefing.
 
-- `windows-endpoint/slow-pc.md`
-- `windows-endpoint/no-internet-dns-failure.md`
-- `identity-access/password-reset-access-loss.md`
-- `identity-access/account-unlock-root-cause.md`
+- [`windows-endpoint/slow-pc.md`](https://github.com/cloudwithdavid/support-eng-lab/blob/main/docs/tickets/windows-endpoint/slow-pc.md)
+- [`windows-endpoint/no-internet-dns-failure.md`](https://github.com/cloudwithdavid/support-eng-lab/blob/main/docs/tickets/windows-endpoint/no-internet-dns-failure.md)
+- [`identity-access/password-reset-access-loss.md`](https://github.com/cloudwithdavid/support-eng-lab/blob/main/docs/tickets/windows-endpoint/password-reset-access-loss.md)
+- [`identity-access/account-unlock-root-cause.md`](https://github.com/cloudwithdavid/support-eng-lab/blob/main/docs/tickets/windows-endpoint/account-unlock-root-cause.md)
 
 ### KB Articles
 
 Reusable references that document repeatable issue patterns for future support work.
 
-- `no-internet-dns-failure.md`
-- `password-reset-access-loss.md`
+- [`no-internet-dns-failure.md`](https://github.com/cloudwithdavid/support-eng-lab/blob/main/docs/kb/no-internet-dns-failure.md)
+- [`password-reset-access-loss.md`](https://github.com/cloudwithdavid/support-eng-lab/blob/main/docs/kb/password-reset-access-loss.md)
 
 ### Runbooks
 
@@ -92,11 +90,11 @@ Python scripts used to automate support and troubleshooting tasks in selected Li
 
 ## Repository Structure
 
-- `docs/tickets/` → simulated support cases
-- `docs/kb/` → KB articles for repeatable issue patterns
-- `docs/runbooks/` → runbooks for repeatable support workflows
-- `tools/bash/` → Bash scripts for common support and troubleshooting tasks
-- `tools/python/` → Python scripts for common support and troubleshooting tasks
+- [`docs/tickets/`](https://github.com/cloudwithdavid/support-eng-lab/tree/main/docs/tickets) → simulated support cases
+- [`docs/kb/`](https://github.com/cloudwithdavid/support-eng-lab/tree/main/docs/kb) → KB articles for repeatable issue patterns
+- [`docs/runbooks/`](https://github.com/cloudwithdavid/support-eng-lab/tree/main/docs/runbooks) → runbooks for repeatable support workflows
+- [`tools/bash/`](https://github.com/cloudwithdavid/support-eng-lab/tree/main/tools/bash) → Bash scripts for common support and troubleshooting tasks
+- [`tools/python/`](https://github.com/cloudwithdavid/support-eng-lab/tree/main/tools/python) → Python scripts for common support and troubleshooting tasks
 <!--
 - `tools/samples/` → sample files used for script testing
 -->
