@@ -13,6 +13,7 @@
   - [Python Scripts](#python-scripts)
 - [Repository Structure](#repository-structure)
 -->
+
 ## About
 
 This is a support engineering lab with a focus on operations and automation, built around simulated ticket case handling, and support-oriented Bash/Python tooling.
@@ -29,7 +30,7 @@ The lab combines two connected layers of practice:
 ### Support Case Handling
 
 - structured support case analysis through realistic scenarios, issue patterns, and troubleshooting paths
-- practical CLI troubleshooting used to support case investigation
+- command-line checks used to gather evidence and narrow support issues
 - reusable support documentation that captures reasoning, outcomes, handoff decisions, and lessons learned
 
 ### Support-Oriented Tooling
@@ -52,11 +53,12 @@ This keeps the lab focused on support judgment, troubleshooting workflow, docume
 
 Primary case-handling records used to practice issue framing, classification, hypotheses, checks, resolution versus escalation decisions, verification, and debriefing.
 
+- [`linux/service-will-not-start.md`](https://github.com/cloudwithdavid/support-eng-lab/blob/main/docs/tickets/linux/service-will-not-start.md)
 - [`windows-endpoint/slow-pc.md`](https://github.com/cloudwithdavid/support-eng-lab/blob/main/docs/tickets/windows-endpoint/slow-pc.md)
 - [`windows-endpoint/no-internet-dns-failure.md`](https://github.com/cloudwithdavid/support-eng-lab/blob/main/docs/tickets/windows-endpoint/no-internet-dns-failure.md)
-- [`identity-access/password-reset-access-loss.md`](https://github.com/cloudwithdavid/support-eng-lab/blob/main/docs/tickets/windows-endpoint/password-reset-access-loss.md)
-- [`identity-access/account-unlock-root-cause.md`](https://github.com/cloudwithdavid/support-eng-lab/blob/main/docs/tickets/windows-endpoint/account-unlock-root-cause.md)
-- [`microsoft-365/m365-license-assignment.md`](https://github.com/cloudwithdavid/support-eng-lab/blob/main/docs/tickets/windows-endpoint/m365-license-assignment.md)
+- [`identity-access/password-reset-access-loss.md`](https://github.com/cloudwithdavid/support-eng-lab/blob/main/docs/tickets/identity-access/password-reset-access-loss.md)
+- [`identity-access/account-unlock-root-cause.md`](https://github.com/cloudwithdavid/support-eng-lab/blob/main/docs/tickets/identity-access/account-unlock-root-cause.md)
+- [`microsoft-365/m365-license-assignment.md`](https://github.com/cloudwithdavid/support-eng-lab/blob/main/docs/tickets/microsoft-365/m365-license-assignment.md)
 
 ### KB Articles
 

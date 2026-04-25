@@ -32,7 +32,7 @@ Single user on a Windows endpoint is unable to access any internet-dependent sit
 5. Test reachability to default gateway with `ping [gateway]`
    - finding: Device is able to reach default gateway
 
-6. Test reachability to a public IP with ping `[public IP]`
+6. Test reachability to a public IP with `ping [public IP]`
    - finding: Device can reach a public IP
 
 7. Test DNS resolution with `nslookup google.com`
