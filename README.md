@@ -1,4 +1,4 @@
-# Support Engineering Lab <img src="docs/assets/status-active-lab.gif" alt="Status: active lab" align="right" width="100">
+# Support Engineering Lab <img align="right" src="https://img.shields.io/badge/status-active%20lab-6f42c1" alt="Status: active lab">
 <!--
 - [About](#about)
 - [What This Lab Demonstrates](#what-this-lab-demonstrates)
@@ -14,7 +14,7 @@
 - [Repository Structure](#repository-structure)
 -->
 
-## About
+## ℹ️ About
 
 This is a support engineering lab with a focus on operations and automation, built around simulated ticket case handling, and support-oriented Bash/Python tooling.
 
@@ -25,21 +25,21 @@ The lab combines two connected layers of practice:
 - **support case handling** through tickets, KB articles, runbooks, and practical CLI troubleshooting
 - **support-oriented tooling** through Bash and Python scripts tied to troubleshooting and evidence-gathering tasks
 
-## What This Lab Demonstrates
+## 🧪 What This Lab Demonstrates
 
-### Support Case Handling
+### 🔎 Support Case Handling
 
 - structured support case analysis through realistic scenarios, issue patterns, and troubleshooting paths
 - command-line checks used to gather evidence and narrow support issues
 - reusable support documentation that captures reasoning, outcomes, handoff decisions, and lessons learned
 
-### Support-Oriented Tooling
+### ⚙️ Support-Oriented Tooling
 
 - log, service, and health-oriented check creation
 - technical evidence collection, formatting, and organization for ticket documentation
 - repetitive task automation tied to Linux and networking cases using Bash and Python scripting
 
-## Support Case Workflow
+## 🔄 Support Case Workflow
 
 Cases are worked through as guided support scenarios.
 
@@ -47,11 +47,11 @@ Each case starts with a realistic ticket briefing, then moves through the releva
 
 This keeps the lab focused on support judgment, troubleshooting workflow, documentation clarity, and practical tooling.
 
-## Artifacts
+## 📦 Artifacts
 
 > This is an active lab. New items are being added as the lab develops.
 
-### Tickets
+### 🎫 Ticket Cases
 
 Primary case-handling records used to practice issue framing, classification, hypotheses, checks, resolution versus escalation decisions, verification, and debriefing.
 
@@ -63,32 +63,32 @@ Primary case-handling records used to practice issue framing, classification, hy
 - [`windows-endpoint/slow-pc.md`](https://github.com/cloudwithdavid/support-eng-lab/blob/main/docs/tickets/windows-endpoint/slow-pc.md)
 - [`microsoft-365/m365-license-assignment.md`](https://github.com/cloudwithdavid/support-eng-lab/blob/main/docs/tickets/microsoft-365/M365-license-assignment.md)
 
-### KB Articles
+### 📚 KB Articles
 
 Reusable references that document repeatable issue patterns for future support work.
 
 - [`no-internet-dns-failure.md`](https://github.com/cloudwithdavid/support-eng-lab/blob/main/docs/kb/no-internet-dns-failure.md)
 - [`password-reset-access-loss.md`](https://github.com/cloudwithdavid/support-eng-lab/blob/main/docs/kb/password-reset-access-loss.md)
 
-### Runbooks
+### 📋 Runbooks
 
 Stepwise operational guides that standardize repeated support workflows and escalation logic.
 
 -
 
-### Bash Scripts
+### 🐚 Bash Scripts
 
 Bash scripts used to reduce repetitive manual troubleshooting work in selected Linux and networking cases.
 
 -
 
-### Python Scripts
+### 🐍 Python Scripts
 
 Python scripts used to automate support and troubleshooting tasks in selected Linux and networking cases.
 
 -
 
-## Repository Structure
+## 🗂️ Repository Structure
 
 - [`docs/tickets/`](https://github.com/cloudwithdavid/support-eng-lab/tree/main/docs/tickets) → simulated support cases
 - [`docs/kb/`](https://github.com/cloudwithdavid/support-eng-lab/tree/main/docs/kb) → KB articles for repeatable issue patterns
