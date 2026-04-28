@@ -1,4 +1,4 @@
-# Application Install Blocked
+# Canva Desktop Application Install Blocked
 
 ## Summary
 
@@ -6,7 +6,9 @@ User cannot install the Canva desktop app on their company Windows laptop.
 
 ## Issue
 
-User reports that the Canva desktop app installation is blocked on their company Windows laptop. The installer asks for administrator credentials, which the user does not have. Root cause is not yet confirmed; issue may involve UAC, standard user permissions, software approval, endpoint security policy, or an installer-specific problem.
+User reports that the Canva desktop app installation is blocked on their company Windows laptop. The installer asks for administrator credentials, which the user does not have.
+
+> Root issue may involve UAC, standard user permissions, software approval, endpoint security policy, or an installer-specific problem.
 
 ## Hypotheses
 
