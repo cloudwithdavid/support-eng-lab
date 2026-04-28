@@ -1,4 +1,4 @@
-# Support Engineering Lab <img align="right" src="https://img.shields.io/badge/status-active%20lab-6f42c1" alt="Status: active lab">
+# Support Engineering Lab
 <!--
 - [About](#about)
 - [What This Lab Demonstrates](#what-this-lab-demonstrates)
@@ -55,7 +55,7 @@ This keeps the lab focused on support judgment, troubleshooting workflow, docume
 
 Primary case-handling records used to practice issue framing, classification, hypotheses, checks, resolution versus escalation decisions, verification, and debriefing.
 
-- [`networking/no-outbound-internet.md`](https://github.com/cloudwithdavid/support-eng-lab/blob/main/docs/tickets/networking/no-outbound-internet.md)
+- [`networking/invalid-default-route.md`](https://github.com/cloudwithdavid/support-eng-lab/blob/main/docs/tickets/networking/invalid-default-route.md)
 - [`linux/service-will-not-start.md`](https://github.com/cloudwithdavid/support-eng-lab/blob/main/docs/tickets/linux/service-will-not-start.md)
 - [`identity-access/password-reset-access-loss.md`](https://github.com/cloudwithdavid/support-eng-lab/blob/main/docs/tickets/identity-access/password-reset-access-loss.md)
 - [`identity-access/account-unlock-root-cause.md`](https://github.com/cloudwithdavid/support-eng-lab/blob/main/docs/tickets/identity-access/account-unlock-root-cause.md)
