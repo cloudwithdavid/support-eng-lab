@@ -79,13 +79,13 @@ Stepwise operational guides that standardize repeated support workflows and esca
 
 ### 🐚 Bash Scripts
 
-Bash scripts used to reduce repetitive manual troubleshooting work in selected Linux and networking cases.
+Bash scripts used to reduce repetitive manual troubleshooting work.
 
--
+- [`evidence-collect.sh`](https://github.com/cloudwithdavid/support-eng-lab/blob/main/tools/bash/evidence-collect.sh)
 
 ### 🐍 Python Scripts
 
-Python scripts used to automate support and troubleshooting tasks in selected Linux and networking cases.
+Python scripts used to automate support and troubleshooting tasks.
 
 -
 
