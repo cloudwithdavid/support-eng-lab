@@ -35,8 +35,6 @@ This keeps the lab focused on support judgment, troubleshooting workflow, docume
 
 ## 📦 Artifacts
 
-> This is an active lab. New items are being added as the lab develops.
-
 ### 🎫 Ticket Cases
 
 Primary case-handling records used to practice issue framing, classification, hypotheses, checks, resolution versus escalation decisions, verification, and debriefing.
