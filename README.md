@@ -44,7 +44,7 @@ Reusable references that document repeatable issue patterns for future support w
 
 Stepwise operational guides that standardize repeated support workflows and escalation logic.
 
-**Planned:** `identity-sign-in-triage-runbook.md`
+- [`identity-sign-in-triage-runbook.md`](docs/runbooks/identity-sign-in-triage-runbook.md)
 
 ### 🐚 Bash Scripts
 
