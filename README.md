@@ -25,13 +25,13 @@ The lab develops structured troubleshooting judgment, practical CLI fluency, doc
 
 Primary case-handling records used to practice issue framing, triage, troubleshooting, resolution versus escalation decisions, and documentation.
 <!-- markdownlint-disable MD060 -->
-|                                    |                                     |
-| ---------------------------------- | ----------------------------------- |
-| **Linux** | • [`service-will-not-start.md`](docs/tickets/linux/service-will-not-start.md) |
-| **Networking** | • [`invalid-default-route.md`](docs/tickets/networking/invalid-default-route.md) |
-| **Identity & Access** | • [`password-reset-access-loss.md`](docs/tickets/identity-access/password-reset-access-loss.md)<br> • [`account-unlock-root-cause.md`](docs/tickets/identity-access/account-unlock-root-cause.md)<br> • [`policy-blocked-sign-in.md`](docs/tickets/identity-access/policy-blocked-sign-in.md) |
-| **Windows Endpoint** | • [`no-internet-dns-failure.md`](docs/tickets/windows-endpoint/no-internet-dns-failure.md)<br> • [`application-install-blocked.md`](docs/tickets/windows-endpoint/application-install-blocked.md)<br> • [`slow-pc.md`](docs/tickets/windows-endpoint/slow-pc.md) |
-| **Microsoft 365** | • [`m365-license-assignment.md`](docs/tickets/microsoft-365/M365-license-assignment.md) |
+|           |           |
+| --------- | --------- |
+|       **Linux**       | • [`service-will-not-start.md`](docs/tickets/linux/service-will-not-start.md) |
+|    **Networking**     | • [`invalid-default-route.md`](docs/tickets/networking/invalid-default-route.md) |
+| **Identity & Access** | • [`password-reset-access-loss.md`](docs/tickets/identity-access/password-reset-access-loss.md)<br> • [`account-unlock-root-cause.md`](docs/tickets/identity-access/account-unlock-root-cause.md)<br> • [`policy-blocked-sign-in.md`](docs/tickets/identity-access/policy-blocked-sign-in.md)<br> • [`suspicious-login-report.md`](docs/tickets/identity-access/suspicious-login-report.md) |
+| **Windows Endpoint**  | • [`no-internet-dns-failure.md`](docs/tickets/windows-endpoint/no-internet-dns-failure.md)<br> • [`application-install-blocked.md`](docs/tickets/windows-endpoint/application-install-blocked.md)<br> • [`slow-pc.md`](docs/tickets/windows-endpoint/slow-pc.md) |
+|   **Microsoft 365**   | • [`m365-license-assignment.md`](docs/tickets/microsoft-365/M365-license-assignment.md) |
 
 ### 📚 KB Articles
 

@@ -44,10 +44,10 @@ Final access verification is owned by the IAM/security team after policy review,
 
 ## Escalation
 
+Access policy changes/exceptions require IAM/security review. Escalating with sign-in log findings.
+
 Blocking policy: Require compliant device for Order Tracking Portal  
 Unsatisfied condition: Device not marked compliant or managed
-
-Access policy changes/exceptions require IAM/security review. Escalating with sign-in log findings.
 
 ## Prevention
 
