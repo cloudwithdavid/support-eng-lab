@@ -6,9 +6,21 @@
 # Collects service status, recent service logs, listening ports, routing, external reachability, and disk usage into a timestamped file.
 #
 # Example:
-#   ./evidence-collect.sh -s cron -u https://example.com -i 1.1.1.1
+#   ./evidence-collect.sh -s cron -u https://cloudwithdavid.com -i 1.1.1.1
 
 set -euo pipefail
+
+header() {
+  printf '\n--- %s ---\n' "$1" | tee -a "$output_file"
+}
+
+write() {
+  printf '%s\n' "$@" | tee -a "$output_file"
+}
+
+run_command() {
+  "$@" |& tee -a "$output_file"
+}
 
 service_name=""
 external_ip="8.8.8.8"
@@ -41,7 +53,7 @@ while getopts ":s:i:u:h" opt; do
       exit 1
       ;;
     \?)
-      printf 'Error: invalid option -%s\n' "$OPTARG"
+      printf 'Error: -%s is an invalid option\n' "$OPTARG"
       printf 'Usage: %s [-s service-name] [-i external-ip] [-u test-url]\n' "$0"
       exit 1
       ;;
@@ -59,54 +71,54 @@ output_file="${output_dir}/${file_timestamp}-${current_host}.txt"
 
 : > "$output_file"
 
-printf '%s\n' "--- Collecting Evidence ---" | tee -a "$output_file"
-printf 'Timestamp: %s\n' "$timestamp" | tee -a "$output_file"
-printf 'Host: %s\n' "$current_host" | tee -a "$output_file"
-printf 'User: %s\n' "$current_user" | tee -a "$output_file"
+header "Collecting Evidence"
+write "Timestamp: $timestamp"
+write "Host: $current_host"
+write "User: $current_user"
 
 if [[ -n "$service_name" ]]; then
-  printf 'Service: %s\n' "$service_name" | tee -a "$output_file"
+  write "Service: $service_name"
 else
-  printf 'Service: not provided\n' | tee -a "$output_file"
+  write 'Service: not provided'
 fi
 
-printf 'External IP Target: %s\n' "$external_ip" | tee -a "$output_file"
-printf 'Test URL: %s\n' "$test_url" | tee -a "$output_file"
+write "External IP Target: $external_ip"
+write "Test URL: $test_url"
 
-printf '\n--- Disk Usage ---\n' | tee -a "$output_file"
-df -h 2>&1 | tee -a "$output_file" \
-  || printf 'Disk usage information could not be collected\n' | tee -a "$output_file"
+header "Disk Usage"
+run_command df -h \
+  || write "Disk usage information could not be collected"
 
-printf '\n--- Service Status ---\n' | tee -a "$output_file"
+header "Service Status"
 if [[ -n "$service_name" ]]; then
-  systemctl status "$service_name" --no-pager 2>&1 | tee -a "$output_file" \
-    || printf 'Result: service status could not be collected\n' | tee -a "$output_file"
+  run_command systemctl status "$service_name" --no-pager \
+    || write "Result: service status could not be collected"
 else
-  printf 'Result: skipped because no service name was provided\n' | tee -a "$output_file"
+  write "Result: skipped because no service name was provided"
 fi
 
-printf '\n--- Recent Journal Logs ---\n' | tee -a "$output_file"
+header "Recent Journal Logs"
 if [[ -n "$service_name" ]]; then
-  journalctl -u "$service_name" -n 25 --no-pager 2>&1 | tee -a "$output_file" \
-    || printf 'Result: recent journal logs could not be collected\n' | tee -a "$output_file"
+  run_command journalctl -u "$service_name" -n 25 --no-pager \
+    || write "Result: recent journal logs could not be collected"
 else
-  printf 'Result: skipped because no service name was provided\n' | tee -a "$output_file"
+  write "Result: skipped because no service name was provided"
 fi
 
-printf '\n--- Listening Ports ---\n' | tee -a "$output_file"
-ss -tuln 2>&1 | tee -a "$output_file" \
-  || printf 'Listening ports information could not be collected\n' | tee -a "$output_file"
+header "Listening Ports"
+run_command ss -tuln \
+  || write "Listening ports information could not be collected"
 
-printf '\n--- Routing Table ---\n' | tee -a "$output_file"
-ip route 2>&1 | tee -a "$output_file" \
-  || printf 'Routing table information could not be collected\n' | tee -a "$output_file"
+header "Routing Table"
+run_command ip route \
+  || write "Routing table information could not be collected"
 
-printf '\n--- External IP Reachability ---\n' | tee -a "$output_file"
-ping -c 4 "$external_ip" 2>&1 | tee -a "$output_file" \
-  || printf 'External IP reachability check failed; external IP did not respond or could not be reached\n' | tee -a "$output_file"
+header "External IP Reachability"
+run_command ping -c 4 "$external_ip" \
+  || write "External IP reachability check failed; external IP did not respond or could not be reached"
 
-printf '\n--- External URL Reachability ---\n' | tee -a "$output_file"
-curl -sSI --max-time 5 "$test_url" 2>&1 | tee -a "$output_file" \
-  || printf 'External URL reachability check failed; external URL did not return a reachable HTTP response\n' | tee -a "$output_file"
+header "External URL Reachability"
+run_command curl -sSI --max-time 5 "$test_url" \
+  || write "External URL reachability check failed; external URL did not return a reachable HTTP response"
 
-printf '\nEvidence saved to: %s\n' "$output_file"
+printf 'Evidence saved to: %s\n' "$output_file"
