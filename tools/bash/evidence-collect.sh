@@ -3,7 +3,7 @@
 # evidence-collect.sh
 # Reusable first-pass Linux networking and service evidence collection utility.
 #
-# Collects service status, recent service logs, listening ports, routing, external reachability, and disk usage into a timestamped file.
+# Collects service status, recent service logs, listening ports, routing, and external reachability into a timestamped file.
 #
 # Example:
 #   ./evidence-collect.sh -s cron -u https://cloudwithdavid.com -i 1.1.1.1
@@ -84,10 +84,6 @@ fi
 
 write "External IP Target: $external_ip"
 write "Test URL: $test_url"
-
-header "Disk Usage"
-run_command df -h \
-  || write "Disk usage information could not be collected"
 
 header "Service Status"
 if [[ -n "$service_name" ]]; then
