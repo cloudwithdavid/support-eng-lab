@@ -47,10 +47,12 @@ Single user is unable to access vendor portal while having access to internet an
 
 > **Action Sequence:**
 >
-> Edit the config file and correct bind_port from 8080 to 80 with `sudo nano /etc/vendor-portal/vendor-portal.conf`
-> Restart the service so it picks up the new config with `sudo systemctl restart vendor-portal`
-> Verify the port is now listening with `ss -tuln | grep :80`
-> Confirm the application responds with `curl -I --max-time 5 http://vendor-portal.internal`
+> 1. Edit the config file and correct bind_port from 8080 to 80 with `sudo nano /etc/vendor-portal/vendor-portal.conf`
+> 2. Restart the service so it picks up the new config with `sudo systemctl restart vendor-portal`
+> 3. Verify the port is now listening with `ss -tuln | grep :80`
+> 4. Confirm the application responds with `curl -I --max-time 5 http://vendor-portal.internal`
+
+The port configuration file for the vendor portal was binded to port 8080 instead of port 80. Corrected the config file binding to port 80. After the correcting the config file the vendor portal was started successfully.
 
 ## Verification
 
