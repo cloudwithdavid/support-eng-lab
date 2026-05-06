@@ -39,6 +39,7 @@ Reusable references that document repeatable issue patterns for future support w
 
 - [`no-internet-dns-failure.md`](docs/kb-articles/no-internet-dns-failure.md)
 - [`password-reset-access-loss.md`](docs/kb-articles/password-reset-access-loss.md)
+- [`service-start-failure-kb.md`](docs/kb-articles/service-start-failure-kb.md)
 
 ### 📋 Runbooks
 
