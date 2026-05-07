@@ -25,7 +25,7 @@
 3. [check]
    - finding:
 
-## Resolution / Next Path
+## Resolution
 
 [What fixed the issue, or what the best-supported next path was.]
 
