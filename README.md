@@ -51,7 +51,8 @@ Stepwise operational guides that standardize repeated support workflows and esca
 
 Bash scripts used to reduce repetitive manual troubleshooting work.
 
-- [`evidence-collect.sh`](tools/bash/evidence-collect.sh) — reusable first-pass Linux evidence collection. Accepts an optional service name, URL, and/or IP address. Collects host, disk, service, journal, port, routing, and reachability evidence, and writes results to a timestamped file for ticket attachment or escalation reference.
+- [`evidence-collect.sh`](tools/bash/evidence-collect.sh) — reusable first-pass Linux evidence collection. Accepts an optional service name, URL, and/or IP address. Collects host, service, journal, port, routing, and reachability evidence, and writes results to a timestamped file.
+- [`disk-triage.sh`](tools/bash/disk-triage.sh) — first-pass disk usage triage utility. Accepts a target path, usage threshold, and depth value. Reports filesystem usage, flags filesystems above the threshold, shows the target path size and largest entries, and can save results to a timestamped file.
 
 ### 🐍 Python Scripts
 
