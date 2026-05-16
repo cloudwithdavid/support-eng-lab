@@ -18,13 +18,13 @@ User is unable to access internet or internal tools while being able to reach lo
 
 ## Checks
 <!-- markdownlint-disable MD029 MD032 -->
-1. Confirm IP reachability — ping to an external IP
+1. Confirm IP reachability — `ping` to an external IP
 - _finding_: Device is able to reach external IPs
 
-2. Confirm name resolution is actually broken — nslookup against a known hostname
-- _finding_: Device unable to resolve domain names
+2. Confirm name resolution is actually broken — `dig` against a known hostname
+- _finding_: Queries are being sent to the old segment's DNS server therefore is unable to resolve domain names
 
-3. Inspect nameserver configuration (with `cat /etc/resolv.conf`)
+3. Confirm nameserver configuration (with `cat /etc/resolv.conf`)
 
 ```bash
 nameserver 10.0.1.53
@@ -36,7 +36,7 @@ nameserver 10.0.1.53
 
 > **Action sequence:**  
 > 1. Corrected `resolv.conf` file (with `nano /etc/resolv.conf`) to the correct DNS server
-> 2. Checked device domain name resolution (with `nslookup`)
+> 2. Checked device domain name resolution (with `dig`)
 > 3. Checked if the device can access internet and internal tools (with `curl`)
 
 The nameserver configuration file was incorrectly pointing to the old DNS server IP from the previous network segment, causing the device to be unable to resolve domain names. Corrected the nameserver entry to the current DNS server IP. After correcting the entry, the device was able to resolve names, access the internet, and access internal tools.
@@ -54,5 +54,7 @@ Confirm nameserver configuration file is properly configured after performing ne
 
 `/etc/resolv.conf` is a plain text configuration file on a Linux machine that tells it what DNS server to send name resolution queries
 
-This lesson introduced the nameserver configuration file, and again of course, was a networking concept lesson. _In this case, I encoded the understanding of DNS and IP more concretely_ — particularly from the framing of the troubleshooting commands/checks (with `ping` and `nslookup`).
-With `ping <domain/hostname>`, it does check name resolution, but it also checks packet routing. Therefore if it fails, it could be either a routing issue or a name resolution issue. So `ping` would not be ideal if you wanted to check name resolution specifically. Instead you would use `nslookup <domain>` because it checks name resolution alone, allowing you to determine whether name resolution is an issue directly.
+_**I encoded the understanding of DNS and IP more concretely**_ —  
+particularly from the framing of the network troubleshooting commands (`ping` and `dig`).
+
+With `ping <domain/hostname>`, it does check name resolution, but it also checks packet routing. Therefore if it fails, it could be either a routing issue or a name resolution issue. So `ping` would not be ideal if you wanted to check name resolution specifically. Instead you would use `dig <domain>` ( or`nslookup <domain>`),  because it checks name resolution alone, allowing you to determine whether name resolution is an issue directly.
