@@ -55,6 +55,4 @@ Confirm nameserver configuration file is properly configured after performing ne
 `/etc/resolv.conf` is a plain text configuration file on a Linux machine that tells it what DNS server to send name resolution queries
 
 This lesson introduced the nameserver configuration file, and again of course, was a networking concept lesson. _In this case, I encoded the understanding of DNS and IP more concretely_ — particularly from the framing of the troubleshooting commands/checks (with `ping` and `nslookup`).
-With `ping <domain/hostname>` it does check name resolution, but it also checks packet routing. Therefore if it fails, it could be either a routing issue or a name resolution issue, so if you wanted to target check name resolution, `ping` would not be ideal. Instead you would use `nslookup <domain>` because it target checks name resolution alone, allowing you to know if name resolution is an issue directly.
-
-The core diagnostic split: IP reachability vs. name resolution. They look identical to the user — "nothing works" — but they point to completely different fixes.
+With `ping <domain/hostname>`, it does check name resolution, but it also checks packet routing. Therefore if it fails, it could be either a routing issue or a name resolution issue. So `ping` would not be ideal if you wanted to check name resolution specifically. Instead you would use `nslookup <domain>` because it checks name resolution alone, allowing you to determine whether name resolution is an issue directly.
